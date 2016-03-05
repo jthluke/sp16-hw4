@@ -23,5 +23,4 @@ class DogsController < ApplicationController
   def user_params
     params.require(:dog).permit(:name, :age)
   end
-
 end
