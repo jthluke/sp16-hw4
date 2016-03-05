@@ -1,0 +1,8 @@
+<font face="Comic sans MS" size="30" color="blue"><h1>MY INDEX PAGE!</h1></font>
+<h2>Dogs</h2>
+<% @dogs.each do |d| %>
+	<p>Name:  <%= link_to d.name, dog_path(d) %>, 
+	Age:  <%= d.age %>, 
+	</p>
+<% end %>
+<%= link_to "new", dogs_new_path %>
